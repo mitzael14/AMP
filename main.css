@@ -1,0 +1,432 @@
+:root{
+    --primary:#ddd;
+    --seconday: #253D5B;
+    --third: #C9A959;
+    --dark:#333;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8;)
+}
+
+html{
+    box-sizing: border-box;
+    font-size: sans-serif;
+    color: var(--dark);
+    padding: 0;
+    margin: 0;
+}
+
+/* splash page */
+
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--third);
+    z-index: 200;
+}
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: var(--third);
+    z-index: -10;
+}
+
+.splashLogo {
+    width: 345px;
+    padding: 15% 40%;
+}
+
+
+/* navigation bar */
+
+
+.menuBar {
+    background: transparent;
+    color: var(--seconday);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav .list {
+    display: inline-block;
+    padding: 20px 2px;
+}
+
+.nav .list li a {
+    align-items: center;
+}
+
+.menuBar a {
+    text-decoration: none;
+}
+
+.menuBar a:hover {
+    color: var(--primary);
+}
+
+.menu {
+    display: none;
+    padding: 30px 0;
+}
+
+/* hamburger icon */
+
+.bar {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 4px;
+    background-color: var(--seconday);
+    display: flex;
+    border-radius: 5px;
+}
+
+/* Body of Home portfolio */
+
+body{
+    margin: 35px 50px;
+    line-height: 1.4;
+}
+
+.box-A,
+.box-B {
+    padding: 2% 4%;
+}
+
+
+h1{
+    font-size: 20px;
+    color: var(--seconday);
+    margin-bottom: 0%;
+}
+
+h2{
+    font-size: 75px;
+    color: var(--seconday);
+    text-align: left;
+    text-decoration: double;
+}
+
+.p1{
+    font-size: 20px;
+    color: var(--seconday);
+}
+
+.profile {
+    height: 350px;
+    float: left;
+}
+
+.me {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.me h1 {
+    font-size: 20px;
+}
+
+.me p {
+    font-size: 20px;
+    color: var(--seconday);
+}
+
+/* Projects Page */
+
+.projects {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.projects h3 {
+    font-size: 35px;
+}
+
+.projects h4 {
+    font-size: 25px;
+	padding: 0 2px;
+}
+
+.Web, .logos, .Java {
+    display: inline-flex;
+    padding: 2px 4px;
+}
+
+#A {
+    position: relative;
+}
+
+#A img {
+    height: 250px;
+    width: 350px;
+    padding: 10px 10px;
+}
+
+#A .btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#A .btn:hover {
+    background-color: var(--primary);
+}
+
+/* pop up for Buttons */
+
+.popup .overlay {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: var(--third);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: var(--primary);
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #C9A959;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Contact Page */
+
+.contact h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6% 2%;
+}
+
+.contact .info {
+    display: inline-flex;
+
+
+}
+
+.info .media {
+    width: 45px;
+    padding: 4px 8px;
+}
+
+.container {
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactForm {
+    width: 80%;
+    padding: 0px;
+}
+
+h5 {
+    font-size: 30px;
+    color: var(--seconday);
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--seconday);
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid var(--seconday);
+    outline: none;
+    resize: none;
+}
+
+
+
+/* tablet View */
+
+@media (max-width: 1000px) {
+
+    .menuBar {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 15px;
+    }
+
+    .nav {
+        list-style-type: none;
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav .list {
+        display: block;
+        padding: 20px 20px;
+        border-top: 1px solid var(--seconday);
+        justify-content: center;
+    }
+
+    .nav .list a {
+        font-size: 20px;
+    }
+
+    .active {
+        display: block;
+    }
+
+    /* personal information */
+
+    .profile{
+        display: flex;
+    }
+
+
+    /* Projects */
+
+    .Web, .logos, .Java {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #A {
+        position: relative;
+    }
+    
+    #A img {
+        height: 250px;
+        width: 350px;
+        padding: 10px 10px;
+    }  
+    
+    /* Contact */
+
+    .container {
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    
+    .popup .overlay {
+        position: fixed;
+    }
+
+    .splash .splashLogo {
+        padding: 50% 8%;
+    }
+    
+    .box-A h2 {
+        font-size: 35px;
+    }
+    
+    img .profile {
+       width: 10px;
+       align-items: center;
+    }
+    
+
+    .info .media {
+        height: 15px;
+        width: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .popup .content {
+        width: 80%;
+        height: 40%;
+    }
+    
+    .popup .close-btn {
+        font-size: 15px;
+    }
+    
+    .info .media p {
+        font-size: 2px
+    }
+    
+    #A img {
+        padding: 15px 0;
+    }
+    
+}

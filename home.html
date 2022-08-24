@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Porfolio website  </title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <header>
+
+        <div class="splash">
+            <img class="splashLogo" src="images/AMP.png">  
+        </div>
+
+        <nav class="menuBar">
+            <div style="width: 80%">
+                <a><img class="logo" src="images/AMP.png"></a>             
+            </div>
+            <ul class="nav" id="navi-list">
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#projects">Projects</a></li>
+                <li class="list"><a href="file:///C:/Users/Mitza/Desktop/AMP%20Portfolio/Mitzael.pdf">Resume</a></li>
+                <li class="list"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu" id="toggle-Button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="box-A">
+            <h1>Hello my name is</h1>
+            <h2>Alexis Mitzael Padilla</h2>
+            <p class="p1">I'm a software Developer that will help you create amazing projects to make your business come true. 
+                I like to keep up with the latest trends in the Web Design world. To gain more knowledge and to deliever the best 
+                work to each client I get. 
+            </p>
+        </div>
+
+        <div class="box-B">
+            <section>
+                <div class="profile">
+                    <img class="profile" src="images/me.jpg">
+                </div>
+                <div class="me">
+                    <h1>A Brief Rundown</h1>
+                    <p>I'm a developer from the MidWest located in Sioux City, IA area.</p>
+                    <p>I enjoy creating projects and designing websites for people. I enjoy learning new skills and improving my current onces. </p>
+                    <p>Lately I have been learning flutter/dart programing for Mobile design. </p>
+                </div>
+            </section>
+        </div>
+
+        <!------- Projects Section -------->
+
+        <div id="Projects">
+            <section class="projects">
+                <h3>Coding projects</h3>
+                <h4>HTML & CSS</h4>
+                    <div class="Web">
+                        <div id="A">
+                            <img src="images/websites/AYYWeyy.png">
+                            <div class="popup" id="popup-1">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('1')">&times;</div>
+                                    <h4>AyyWeyy</h4>
+                                    <p>This is a concept website of a clothing store. This was created to display all the merchandise 
+                                        they have.
+                                    </p>
+                                </div>
+                            </div>
+                            <button onclick="togglePopup('1')" class="btn">AYYWeyy</button>
+                        </div>
+                        <div id="A">
+                            <img src="images/websites/HC.png">
+                            <div class="popup" id="popup-2">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('2')">&times;</div>
+                                    <h4>Happy Cream</h4>
+                                    <p>This is a concept website of a Icecream Parole. This was created to display all the different
+                                        flavors and food they serve
+                                    </p>
+                                </div>
+                            </div>
+                            <button onclick="togglePopup('2')" class="btn">Happy Cream</button>
+                        </div>
+                        <div id="A">
+                            <img src="images/websites/photo.png">
+                            <div class="popup" id="popup-3">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('3')">&times;</div>
+                                    <h4>Photographer</h4>
+                                    <p>This is a concept website of a Porfolio of a Photographer. To display all of their work and how to contact them 
+                                    </p>
+                                </div>
+                            </div>
+                            <button onclick="togglePopup('3')" class="btn">Photographer</button>
+                        </div>
+                        <div id="A">
+                            <img src="images/websites/trip.png">
+                            <div class="popup" id="popup-4">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('4')">&times;</div>
+                                    <h4>Trips</h4>
+                                    <p>This is a concept website of a agency that a client can book a flight. This also allows you to book a hotel and 
+                                        different packages.
+                                    </p>
+                                </div>
+                            </div>
+                            <button onclick="togglePopup('4')" class="btn">Trips</button>
+                        </div>
+                    </div>
+
+                <h4>Logos</h4>
+                <div class="logos">
+                    <div id="A">
+                        <img src="images/logos/BRC.png">
+                        <div class="popup" id="popup-5">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('5')">&times;</div>
+                                <h4>Blanca Rosa</h4>
+                                <p>This logo just a concept logo of a cafe!
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('5')" class="btn">Cafetaria Blanca Rosa</button>
+                    </div>
+                    <div id="A">
+                        <img src="images/logos/J&B1.png">
+                        <div class="popup" id="popup-6">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('6')">&times;</div>
+                                <h4>J&B creations</h4>
+                                <p>This logo was created for a business that makes special gifts for those 
+                                    special occassion!
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('6')" class="btn">J&B Creations</button>   
+                    </div>
+                    <div id="A">
+                        <img src="images/logos/tequila1.png">
+                        <div class="popup" id="popup-7">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('7')">&times;</div>
+                                <h4>Santa Pueblo</h4>
+                                <p>This logo was created for a business that is in the product of making Tequila!
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('7')" class="btn">Tequila Casa Santo Pueblo</button>
+                    </div>
+                </div>
+
+                <h4>Java Programming</h4>
+                <div class="Java">
+                    <div id="A">
+                        <img src="images/coding/BlancaRosa.PNG">
+                        <div class="popup" id="popup-8">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('8')">&times;</div>
+                                <h4>Blanca Rosa</h4>
+                                <p>This a is Java programming code that was created for a coding Project!
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('8')" class="btn">Blanca Rosa</button>
+                    </div>
+                    <div id="A">
+                        <img src="images/coding/soon.jpg">
+                        <div class="popup" id="popup-9">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('9')">&times;</div>
+                                <h4>coming soon</h4>
+                                <p>coming soon
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('9')" class="btn">Details</button>
+                    </div>
+                    <div id="A">
+                        <img src="images/coding/soon.jpg">
+                        <div class="popup" id="popup-10">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('10')">&times;</div>
+                                <h4>coming soon</h4>
+                                <p>coming soon
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('10')" class="btn">Details</button>
+                    </div>
+                    <div id="A">
+                        <img src="images/coding/soon.jpg">
+                        <div class="popup" id="popup-11">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup('11')">&times;</div>
+                                <h4>coming soon</h4>
+                                <p>coming soon
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup('11')" class="btn">Details</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!------- Contact Me Section -------->
+        <section class="contact">
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>Let me Know if you have any questions feel free to message me. I'll get back to you as soon as possible</p>
+            </div>
+            <div class="info">
+                <img class="media" src="images/instagram.png"><p>@mitzaeldesigns</p>
+                <img class="media" src="images/email.png"><p>padillait@outlook.com</p>
+                <img class="media" src="images/whatsapp.png"><p>(712) 577-1336</p>
+            </div>
+            <div>
+                <h4>Programs knowledge</h4>
+                <div>
+                    
+                </div>
+            </div>
+            <div>
+                <h4>Work Experience</h4>
+                <div class="work">
+                    <ul>
+                        <li>Emonics</li>
+                        <ul>
+                            <li>August, 2022 to Still Here</li>
+                            <li>Title is: Android Mobile Developer</li>
+                        </ul>
+                        <li>Foundation Path of Hope</li>
+                        <ul>
+                            <li>August, 2021 to Still Here</li>
+                            <li>Title: Web developer and graphic designer</li>
+                        </ul>
+                    </ul>
+
+                </div>
+            </div>
+            <div>
+                <h4>Certification</h4>
+                <ul>
+                    <li>Cybint Solutions</li>
+                </ul>
+            </div>
+            <!--<div class="container">
+                <div class="contactForm">
+                    <form>
+                        <h5>Send Message</h5>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Message</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>-->
+            </div>       
+        </section> 
+
+        </div>
+
+    </body>
+
+    <!-- Java-Script mobile animation -->
+    <script src="app.js"></script>
+
+    <script>
+        function togglePopup(num){
+        document.getElementById(`popup-${num}`).classList.toggle("active"); 
+        }
+    </script>
+
+</html>
